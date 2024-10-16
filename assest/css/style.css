@@ -9,7 +9,7 @@
 }
 /* header start */
 header {
-  top: 0;
+  /* top: 0;
   left: 0;
   width: 100%;
   padding: 30px 1px 30px 2px;
@@ -17,7 +17,7 @@ header {
   flex-flow: row wrap;
   justify-content: space-between;
   justify-content: flex-end;
-  align-items: center;
+  align-items: center; */
 }
 
 ul {
@@ -30,7 +30,7 @@ ul {
 li {
   float: left;
 }
-
+content
 li a {
   color: black;
   padding: 14px 16px;
@@ -44,22 +44,63 @@ li a {
   color: #FF6464;
 }
 
+.header{
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: end;
+  z-index: 10;
+}
+
+.header .navigation ul li{
+  padding-left: 15px;
+}
 /* header end */
 
+
+.container{
+  width: 100%;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* body start */
 .home {
   position: relative;
-  height: 450px;
+  height: 100vh;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+  flex-wrap: wrap !important;
+  justify-content: center;
   align-items: center;
 }
 
 .content {
-  max-width: 500px;
+  /* max-width: 500px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
   color: #21243D;
+}
+
+.content p{
+  line-height: 25px;
+}
+
+.hero-img{
+  width: 50%;
+  height: 400px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.hero-img img{
+  width: 75%;
 }
 
 .content h2 {
@@ -70,7 +111,7 @@ li a {
   padding: 10px 0 40px 0;
 }
 
-.btn-group a {
+.btn-group {
   color: #fff;
   text-decoration: none;
   padding: 10px 40px;
@@ -78,9 +119,27 @@ li a {
   border-radius: 2px;
   font-weight: 500;
   transition: .3s;
+  border: none;
+  width: 50%;
 }
 
+/* post  */
+.post{
+  background-color: #EDF7FA;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
+.post-title{
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 .Recentposts {
   height: 270px;
@@ -88,7 +147,7 @@ li a {
   background-color: #EDF7FA;
 
 }
-
+/*  */
 
 .column1 {
   width: 49%;
@@ -96,22 +155,33 @@ li a {
 }
 
 
-.box {
+/* .box {
   width: 34%;
   padding: 40px;
   margin: 25px;
   background-color: white;
+} */
+
+.post-cards .card{
+  background-color: white;
+  padding: 20px;
+  width: 49%;
+  border-radius: 12px;
+}
+
+.post-cards .card h2,p{
+  padding-bottom: 20px;
 }
 
 .row {
   background-color: #EDF7FA;
 }
 
-#row {
+/* #row {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-}
+} */
 
 /* @media screen and (max-width: 600px) {
   div#row {
@@ -119,9 +189,9 @@ li a {
   }
 } */
 
-.box1 {
+/* .box1 {
   margin-top: 30px;
-}
+} */
 
 #typo {
   color: #8695A4;
@@ -236,8 +306,45 @@ li a {
 /* footer end */
 
 
+@media screen and (max-width : 991px) {
+  .content{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   width: 100%;
+   order: 2;
+  }
 
-@media only screen and (max-width: 743px) {
+  .home{
+    align-items: normal;
+    height: auto;
+    padding-top: 7rem;
+    /* margin-bottom: 0rem; */
+  }
+
+  .hero-img{
+    width: 100%;
+    order: 1;
+    justify-content: center;
+  }
+
+  .hero-img img{
+    width: 400px;
+  }
+
+
+}
+
+@media screen and (max-width : 767px) {
+  .post-cards .card{
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+/* @media only screen and (max-width: 743px) {
   body {
     background-color: rgb(8, 133, 175);
     margin: 0;
@@ -249,7 +356,7 @@ li a {
     div.content{ order: 2;}
     div.img1{order: 1;}
   }
-}
+} */
 
 @media only screen and (max-width: 743px) {
   .content h2 {
@@ -265,12 +372,7 @@ li a {
 
   }
 
-  .btn-group{
-   display: flex;
-   justify-content: center;
-  }
-
-  .center1 {
+   .center1 {
     display: flex;
     flex-wrap: wrap;
    width: 100%;
@@ -302,10 +404,10 @@ li a {
 
 
 @media only screen and (max-width: 426px) {
-  body {
+  /* body {
     background-color: rgb(175, 8, 169);
     
-  }
+  } */
   .center1 {
     margin-top: 60%;
    }
@@ -316,9 +418,6 @@ li a {
   width: 100%;
 }
 
-#row {
-  
-}
 
 .row222{
   display: none;
