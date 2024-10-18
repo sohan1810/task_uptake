@@ -182,7 +182,13 @@ li a {
 p {
   padding-bottom: 30px;
 }
+.container-lable{
+  padding: 30px 0 30px 0;
+}
 
+.container-lable h3 {
+  margin-bottom: 20px;
+}
 .row {
   background-color: #EDF7FA;
 }
@@ -195,13 +201,14 @@ p {
 .works-1 {
   padding-top: 85px;
   padding-bottom: 30px;
-
+font-size: 35px;
 }
 
 
 .mind {
   padding-top: 100px;
   margin-bottom: 20px;
+  font-size: 30px;
 }
 
 /* #row {
@@ -361,7 +368,7 @@ p {
 
 }
 
-@media screen and (max-width : 767px) {
+@media screen and (max-width : 769px) {
   .post-cards .card {
     margin-top: 10px;
     width: 100%;
@@ -381,6 +388,7 @@ p {
 
   #img_1 {
     width: 100%;
+    padding-bottom: 20px;
   }
 
   .row222 {
@@ -405,6 +413,7 @@ p {
 
   #img_1 {
     width: 100%;
+    padding-bottom: 20px;
   }
 }
 
@@ -421,6 +430,9 @@ p {
   .btn-group {
     width: 70%;
   }
+  .mind {
+  font-size: 21px;
+}
 
 }
 
@@ -454,7 +466,7 @@ p {
 } */
 
 @media only screen and (max-width: 743px) {
-  .content h2 {
+  /* .content h2 {
     margin-top: 25px;
     text-align: center;
 
@@ -465,7 +477,7 @@ p {
     text-align: center;
     font-size: large;
 
-  }
+  } */
 
   /* .center1 {
     display: flex;
